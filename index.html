@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Tailwindcss cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'sahid-color': '#ffdc26',
+              }
+            }
+          }
+        }
+    </script>
+    <!-- daisyui cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font cdn  -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+    <style>
+      .adlam-display-font {
+        font-family: "ADLaM Display", serif;
+      }
+    </style>
 </head>
 <body>
-    
+    <!-- header section start -->
+     <header>
+        <!-- nav section  -->
+        <nav class=" bg-[#FFF9F4] py-4">
+          <div class="flex justify-between xl:mx-32 lg:mx-24 md:mx-14 mx-8">
+            <!-- left side  -->
+            <div class="flex items-center gap-3">
+              <img src="c1-assets/logo-header.png" alt="">
+              <h1 class="text-2xl md:block hidden">Browse<span class="text-[#ffdc26]">4</span>Pets</h1>
+            </div>
+            <!-- middle side -->
+            <div class=" lg:flex gap-8 items-center hidden">
+              <p>Find a pet</p>
+              <p>Breeds</p>
+              <p>Contact us</p>
+            </div>
+            <!-- Right side  -->
+            <div class=" md:flex gap-3 items-center hidden">
+              <span class="material-symbols-outlined">notifications</span>
+              <span class="material-symbols-outlined">search</span>
+              <button class="px-7 py-2 btn border-[#FFEA8D] bg-white">Login</button>
+              <button class="btn bg-[#FFDC26] px-8 py-2 rounded-lg hover:bg-[#FFDC26] sm:block">Register</button>
+            </div>
+            <!-- Menu bar icon -->
+            <span class="material-symbols-outlined md:hidden flex items-center"> menu </span>
+          </div>
+        </nav>
+        <!-- horizontal line  -->
+        <hr class="border-2 md:hidden">
+     </header>
+    <!-- header section ed -->
 </body>
 </html>
